@@ -10,9 +10,6 @@
         "cordova-plugin-device": {
             "PACKAGE_NAME": "fr.netserv.LNReader"
         },
-        "cordova-plugin-console": {
-            "PACKAGE_NAME": "fr.netserv.LNReader"
-        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "fr.netserv.LNReader"
         },
