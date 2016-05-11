@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="fr.netserv.LNReader" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="tech.azsiaz.LNReader" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>LN-Reader</name>
   <description>
         Baka-Tsuki LN Reader
     </description>
-  <author email="contact@azsiaz.tech" href="https://azsiaz.tech/">
+  <author email="contact@azsiaz.tech" href="https://ln.azsiaz.tech/">
       AzSiAz
     </author>
   <content src="index.html"/>
