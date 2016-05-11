@@ -29,18 +29,7 @@ angular.module('ln', ['ionic', 'ln.LnCtrl', 'ln.LnDetailCtrl', 'ln.ChapterCtrl',
     $rootScope.$on('loading:hide', function() {
       $ionicLoading.hide()
     })
-    
-    // var notificationOpenedCallback = function(jsonData) {
-    //   console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
-    // };
-    
-    // window.plugins.OneSignal.init("d6b3ff90-5d2d-11e5-a456-e7ee9ab1db40",{googleProjectNumber: ""},notificationOpenedCallback);
-    
-    // Show an alert box if a notification comes in when the user is in your app.
-    // window.plugins.OneSignal.enableInAppAlertNotification(true);
-    
-    // window.plugins.OneSignal.sendTag("is_test", "true");
-    });
+  });
 })
 
 .config(function($stateProvider, $urlRouterProvider, $provide, $httpProvider) {
