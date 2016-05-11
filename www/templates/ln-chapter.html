@@ -1,0 +1,12 @@
+<ion-view view-title="{{title}}">
+  <ion-nav-buttons side="primary">
+    <button class="button button-icon icon ion-ios-close-empty" ng-click="close()"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="secondary">
+    <button class="button button-icon icon ion-ios-refresh-empty" ng-click="forceRefresh()"></button>
+  </ion-nav-buttons>
+  <ion-content id="chapter" scroll-sista="header" scroll-event-interval="5">
+    <!--<div style="height: 50px;"></div>-->
+    <div id="content" ng-bind-html="content"></div>
+  </ion-content>
+</ion-view>

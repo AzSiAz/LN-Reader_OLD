@@ -1,0 +1,47 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{title}}">
+  <ion-nav-buttons side="secondary">
+    <button class="button button-icon icon ion-ios-refresh-empty" ng-click="forceRefresh()"></button>
+  </ion-nav-buttons>
+  <ion-content class="padding">
+    <center><img ng-src="{{ln.cover}}"></center>
+    <center><h5>{{ln.status}}</h5></center>
+    <h5>{{ln.author}}</h5>
+    <h5>{{ln.illustrator}}</h5>
+    <p>
+      {{ln.synopsis}}
+    </p>
+    <span ng-if="ln.one_off != true" ng-if="ln.tome.length > 0" ng-repeat="arc in ln.tome">
+      <h4 class="center">{{arc.title}}</h4>
+      <ion-list class="list">
+        <div ng-repeat="items in arc.tome">
+          <ion-item ng-class="::setClass(items.cover)" class="item item-text-wrap" ng-class="isGroupShown(items) ? 'ion-minus' : 'ion-plus'" ng-click="toggleGroup(items)" ng-class="{active: isGroupShown(items)}">
+            <img class="item-image" ng-if="items.cover !== undefined" ng-src="{{items.cover}}">
+            <h2>{{items.title}}</h2>
+          </ion-item>
+          <ion-item class="item-accordion item item-text-wrap" ng-repeat="item in items.chapters" ng-click="chapter(item)" ng-show="isGroupShown(items)">
+            {{item.title}}
+          </ion-item>
+        </div>
+      </ion-list>
+    </span>
+    <span ng-if="ln.one_off" ng-if="ln.tome.length > 0" ng-repeat="arc in ln.tome">
+      <ion-list class="list">
+        <ion-item ng-class="::setClass(items.cover)" class="item item-text-wrap">
+          <img class="item-image" ng-if="items.cover !== undefined" ng-src="{{items.cover}}">
+          {{arc.title}}
+          <ion-list class="list">
+            <ion-item class="item item-text-wrap" ng-click="chapter(items)" ng-repeat="items in arc.tome">
+              {{items.title}}
+            </ion-item>
+          </ion-list>
+        </ion-item>
+      </ion-list>
+    </span>
+  </ion-content>
+</ion-view>

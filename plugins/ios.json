@@ -1,0 +1,30 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "fr.netserv.LNReader"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "fr.netserv.LNReader"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "fr.netserv.LNReader"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "fr.netserv.LNReader"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "fr.netserv.LNReader"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "fr.netserv.LNReader"
+        }
+    },
+    "dependent_plugins": {}
+}

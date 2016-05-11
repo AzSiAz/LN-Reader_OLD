@@ -1,0 +1,19 @@
+<ion-view view-title="Favorites">
+  <!--cache-view=false-->
+  <ion-nav-buttons side="primary">
+    <button class="button button-icon icon ion-ios-refresh-empty" ng-click="forceRefresh()"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="secondary">
+    <button class="button button-icon icon ion-ios-search" ng-click="showFilterBar()"></button>
+  </ion-nav-buttons>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-thumbnail-left item-icon-right item-text-wrap" ng-repeat="item in list | orderBy:'title'" href="#/tab/favs/{{item._id}}">
+        <img src="{{item.cover}}">
+        {{item.title}}
+        <i class="icon ion-chevron-right icon-accessory"></i>
+        <ion-option-button class="button-assertive ion-ios-star" ng-click="unFav(item._id)"></ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
