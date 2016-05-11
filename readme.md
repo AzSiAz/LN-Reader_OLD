@@ -1,4 +1,4 @@
-##Baka-Tsuki iOS Reader app		
+#Baka-Tsuki iOS Reader app		
 
 iOS application build on top of ionic framework to read light Novel from baka-tsuki
 
