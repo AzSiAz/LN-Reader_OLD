@@ -21,6 +21,9 @@
         },
         "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "fr.netserv.LNReader"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "tech.azsiaz.LNReader"
         }
     },
     "dependent_plugins": {}

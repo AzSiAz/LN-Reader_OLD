@@ -31,7 +31,6 @@ angular.module('ln.LnDetailCtrl', [])
   };
   
   $scope.chapter = function(array) {
-    // alert(JSON.stringify(id));
     var options = {
       location: 'no',
       clearcache: 'yes',

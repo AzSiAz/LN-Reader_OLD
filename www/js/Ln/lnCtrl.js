@@ -29,7 +29,7 @@ angular.module('ln.LnCtrl', [])
         // alert(JSON.stringify(res._id));
         $rootScope.fav = res._id;
         setTimeout(function() {
-          window.plugins.OneSignal.sendTag(res._id.split("fav_")[1].replace(/_/g," "), 1);
+          // window.plugins.OneSignal.sendTag(res._id.split("fav_")[1].replace(/_/g," "), 1);
           $rootScope.$broadcast('Fav:add');
         }, 500);
         // $cordovaDialogs.alert("Fav Added", "Fav item");

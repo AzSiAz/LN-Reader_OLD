@@ -19,7 +19,7 @@ angular.module('ln', ['ionic', 'ln.LnCtrl', 'ln.LnDetailCtrl', 'ln.ChapterCtrl',
     if (window.StatusBar) {
       // org.apache.cordova.statusbar required
       StatusBar.overlaysWebView(true);
-      StatusBar.styleLightContent();
+      // StatusBar.styleLightContent();
     }
     
     $rootScope.$on('loading:show', function() {
@@ -61,21 +61,18 @@ angular.module('ln', ['ionic', 'ln.LnCtrl', 'ln.LnDetailCtrl', 'ln.ChapterCtrl',
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-
-  .state('chapter', {
-    url:'/chapter/:url',
-    templateUrl: 'templates/ln-chapter.html',
-    controller: 'ChapterCtrl'
-  })
   // setup an abstract state for the tabs directive
   .state('tab', {
     url: '/tab',
     abstract: true,
     templateUrl: 'templates/tabs.html'
   })
-
+  .state('chapter', {
+    url:'/chapter/:url',
+    templateUrl: 'templates/ln-chapter.html',
+    controller: 'ChapterCtrl'
+  })
   // Each tab has its own nav history stack:
-
   .state('tab.dash', {
     url: '/ln',
     views: {
@@ -113,15 +110,6 @@ angular.module('ln', ['ionic', 'ln.LnCtrl', 'ln.LnDetailCtrl', 'ln.ChapterCtrl',
         }
       }
     })
-    // .state('tab.chat-detail', {
-    //   url: '/chats/:chatId',
-    //   views: {
-    //     'tab-chats': {
-    //       templateUrl: 'templates/chat-detail.html',
-    //       controller: 'ChatDetailCtrl'
-    //     }
-    //   }
-    // })
 
   .state('tab.setting', {
     url: '/setting',
