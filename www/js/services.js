@@ -45,12 +45,12 @@ angular.module('ln.services', [])
     list: function(removeCache, lang) {
       if (removeCache) {
         return db.delDoc("list_" + lang).then(function(doc) {
-          return $http.get("https://btapi-shadowys.rhcloud.com/api/category?type=LIGHT_NOVEL&language=" + lang).then(function(res) {
+          return $http.get("https://api.azsiaz.tech/ln/" + lang).then(function(res) {
             var list = doListCache(res.data.titles, lang);
             return list;
           })
         }, function(err) {
-          return $http.get("https://btapi-shadowys.rhcloud.com/api/category?type=LIGHT_NOVEL&language=" + lang).then(function(res) {
+          return $http.get("https://api.azsiaz.tech/ln/" + lang).then(function(res) {
             var list = doListCache(res.data.titles, lang);
             return list;
           })
@@ -60,7 +60,7 @@ angular.module('ln.services', [])
         return db.getLnList(lang).then(function(res) {
           return res.list;
         }, function(err) {
-          return $http.get("https://btapi-shadowys.rhcloud.com/api/category?type=LIGHT_NOVEL&language=" + lang).then(function(res) {
+          return $http.get("https://api.azsiaz.tech/ln/" + lang).then(function(res) {
             var list = doListCache(res.data.titles, lang);
             return list;
           })
@@ -81,7 +81,7 @@ angular.module('ln.services', [])
         return db.get("cache_" + item).then(function(res) {
           return res;
         }, function(err) {
-          return $http.get("https://btapi-shadowys.rhcloud.com/api?title=" + encodeURI(item)).then(function(res) {
+          return $http.get("https://api.azsiaz.tech/title/query/?title=" + encodeURI(item)).then(function(res) {
             var item2 = task.makeNovelDetail(res.data, item);
             db.set(item2).then(function(res) {
               console.log(JSON.stringify(res));
@@ -94,7 +94,7 @@ angular.module('ln.services', [])
       }
       else {
         return db.delDoc("cache_" + item).then(function(res) {
-          return $http.get("https://btapi-shadowys.rhcloud.com/api?title=" + encodeURI(item)).then(function(res) {
+          return $http.get("https://api.azsiaz.tech/title/query/?title=" + encodeURI(item)).then(function(res) {
             var item2 = task.makeNovelDetail(res.data, item);
             db.set(item2).then(function(res) {
               console.log(JSON.stringify(res));
@@ -110,7 +110,7 @@ angular.module('ln.services', [])
       return db.get("fav_" + item).then(function(res) {
         return false;
       }, function(err) {
-        return $http.get("https://btapi-shadowys.rhcloud.com/api?title=" + item).then(function(res) {
+        return $http.get("https://api.azsiaz.tech/title/query/?title=" + item).then(function(res) {
           return task.getBlob(res.data.cover).then(function(blob) {
             var item2 = {
               _id: "fav_" + item,
