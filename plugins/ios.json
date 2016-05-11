@@ -8,21 +8,21 @@
     },
     "installed_plugins": {
         "cordova-plugin-device": {
-            "PACKAGE_NAME": "fr.netserv.LNReader"
-        },
-        "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "fr.netserv.LNReader"
+            "PACKAGE_NAME": "tech.azsiaz.LNReader"
         },
         "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "fr.netserv.LNReader"
-        },
-        "cordova-sqlite-storage": {
-            "PACKAGE_NAME": "fr.netserv.LNReader"
-        },
-        "ionic-plugin-keyboard": {
-            "PACKAGE_NAME": "fr.netserv.LNReader"
+            "PACKAGE_NAME": "tech.azsiaz.LNReader"
         },
         "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "tech.azsiaz.LNReader"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "tech.azsiaz.LNReader"
+        },
+        "cordova-sqlite-storage": {
+            "PACKAGE_NAME": "tech.azsiaz.LNReader"
+        },
+        "ionic-plugin-keyboard": {
             "PACKAGE_NAME": "tech.azsiaz.LNReader"
         }
     },

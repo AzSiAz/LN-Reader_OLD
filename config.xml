@@ -18,6 +18,7 @@
   <preference name="StatusBarStyle" value="default"/>
   <preference name="SplashScreenDelay" value="3000"/>
   <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine"/>
+  <preference name="Orientation" value="all"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
