@@ -18,7 +18,7 @@ v1.0.2 out (useable for reading and managing novel, yes favorites view is really
 	- (Low) Download epub/pdf to open them in iBooks (maybe)    
 	- (Medium) Setting tab    
 	- (Low) add more language		
-	- (Medium) Write some test x)
+	- (Medium) Write some test x)			
 	- (High - slow probably because need to fetch some images inside db > image on filesystem ?) Faster Favorites view			
 	
 **DONE**	
