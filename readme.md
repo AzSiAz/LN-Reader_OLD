@@ -6,8 +6,8 @@ Thanks to Shadowys for btapi (https://github.com/Shadowys/btapi)
 
 There is another app based on phonegap/cordova which sould work on iOS here : https://github.com/Masclaux/LightReader
 
-04/11/15 :			
-v1.0.0 out (useable for reading and managing novel, yes favorites view is really slow, I will work on it soon - no download for now)				
+12/05/2016 :			
+v1.0.2 out (useable for reading and managing novel, yes favorites view is really slow, I will work on it soon - no download for now)				
 
 **QUESTION**	
 	- Keep Full Text ? Rename them accordingly to team name or just remove them ?
