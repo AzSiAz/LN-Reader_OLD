@@ -222,6 +222,7 @@ angular.module('ln.services', [])
           if (data.one_off == true) {
             item = {
               _id: "cache_" + title,
+              updateDate: data.updateDate,
               cover: data.cover,
               synopsis: data.synopsis,
               one_off: data.one_off,
