@@ -217,26 +217,26 @@ angular.module('ln.services', [])
     },
     makeNovelDetail: function(data, title) {
       var item;
-      if (data.one_off == true) {
-        item = {
-          _id: "cache_" + title,
-          updateDate: data.updateDate,
-          cover: data.cover,
-          synopsis: data.synopsis,
-          one_off: data.one_off,
-          status: data.status,
-          author: data.author,
-          illustrator: data.illustrator,
-          tome: []
-        };
-        for (var i = 0; i <= data.tome.length - 1; i++) {
-          item.tome.push({
-            title: data.tome[i].title,
-            tome: data.tome[i].chapters
-          });
-        }
-      }
-      else {
+      // if (data.one_off == true) {
+      //   item = {
+      //     _id: "cache_" + title,
+      //     updateDate: data.updateDate,
+      //     cover: data.cover,
+      //     synopsis: data.synopsis,
+      //     one_off: data.one_off,
+      //     status: data.status,
+      //     author: data.author,
+      //     illustrator: data.illustrator,
+      //     tome: []
+      //   };
+      //   for (var i = 0; i <= data.tome.length - 1; i++) {
+      //     item.tome.push({
+      //       title: data.tome[i].title,
+      //       tome: data.tome[i].chapters
+      //     });
+      //   }
+      // }
+      // else {
         item = {
           _id: "cache_" + title,
           cover: data.cover,
@@ -253,7 +253,7 @@ angular.module('ln.services', [])
             tome: stripEmpty(data.tome[i].tome)
           });
         }
-      }
+      // }
       return item;
     }
   }
