@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="tech.azsiaz.LNReader" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="tech.azsiaz.LNReader" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>LN-Reader</name>
   <description>
         Baka-Tsuki LN Reader
@@ -76,10 +76,6 @@
     <splash src="resources/android/splash/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
-  <platform name="wp8">
-    <icon src="resources/wp8/icon/ApplicationIcon.png" width="99" height="99"/>
-    <icon src="resources/wp8/icon/Background.png" width="159" height="159"/>
-    <splash src="resources/wp8/splash/SplashScreenImage.png" width="768" height="1280"/>
-  </platform>
+  <platform name="wp8"/>
   <icon src="resources/android/icon/drawable-xhdpi-icon.png"/>
 </widget>
