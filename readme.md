@@ -1,5 +1,7 @@
 # Baka-Tsuki iOS Reader app		
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/AzSiAz/LN-Reader_OLD.svg)](https://greenkeeper.io/)
+
 iOS application build on top of ionic framework to read light Novel from baka-tsuki
 
 Thanks to Shadowys for btapi (https://github.com/Shadowys/btapi)
